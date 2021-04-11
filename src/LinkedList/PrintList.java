@@ -21,6 +21,7 @@ public class PrintList {
     public static Node addFirst(Node head, int a){
        Node temp=new Node(a);
        temp.next=head;
+       head = "loa";
        return temp;
 
     }
