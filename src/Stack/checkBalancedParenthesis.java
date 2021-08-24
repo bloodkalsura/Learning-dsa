@@ -1,7 +1,7 @@
 package Stack;
 
 import java.util.ArrayDeque;
-import java.util.Deque;
+import java.util.*;
 
 public class checkBalancedParenthesis {
     static boolean matching(char a, char b){
@@ -9,7 +9,7 @@ public class checkBalancedParenthesis {
     }
 
     public static boolean isBalanced(String str) {
-        Deque<Character> s=new ArrayDeque<Character>();
+        Stack<Character> s=new Stack<Character>();
         for(int i=0;i<str.length();i++){
             if(str.charAt(i)=='('||str.charAt(i)=='{'||str.charAt(i)=='[')
                 s.push(str.charAt(i));
