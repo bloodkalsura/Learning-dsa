@@ -16,11 +16,11 @@ public class FloorInSorted {
         int start = 0, end = n - 1;
         int max=0;
 
-        while(start<=end)
+        while(start<end)
         {
             int mid=(start+end)/2;
 
-            System.out.println(arr[mid]);
+            //System.out.println(arr[mid]);
             if(arr[mid]==key)
                 return key;
 
@@ -29,11 +29,10 @@ public class FloorInSorted {
             if(arr[mid]>key)
             {
                 end=mid-1;
-                max=Math.max(arr[mid],max);
             }
             if(arr[mid]<key) {
                 start=mid+1;
-
+                max=arr[mid];
             }
         }
         return max;
