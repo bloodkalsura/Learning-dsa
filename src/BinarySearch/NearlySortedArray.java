@@ -8,7 +8,6 @@ public class NearlySortedArray {
         int key=4;
 
         System.out.println("Element is at Index "+solve(ip,key));
-
     }
 
     public static int solve(int[] arr,int key)
@@ -21,7 +20,7 @@ public class NearlySortedArray {
         {
             int mid=(start+(end-start))/2;
 
-            if(start>=0 &&end>=0)
+            if(start>=0 && end>=0)
             {
                 if(arr[mid]==key)
                 {

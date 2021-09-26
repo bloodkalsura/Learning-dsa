@@ -4,7 +4,7 @@ public class AllocateMinimumNumberOfPages {
 
     public static void main(String[] args)
     {
-        //Number of pages in books
+
         int arr[] = {12, 34, 67, 90};
 
         int m = 2; //No. of students
