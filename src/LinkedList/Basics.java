@@ -1,9 +1,8 @@
 package LinkedList;
-import java.util.*;
-//import java.io.*;
-//import java.lang.*;
 
-class Test {
+import java.util.*;
+
+class Basics {
 
     public static void main(String args[])
     {
@@ -19,11 +18,14 @@ class Test {
     }
 
     static Node reverseList(Node head){
-        if(head==null||head.next==null)return head;
+        if(head==null||head.next==null)
+            return head;
+
         Node rest_head=reverseList(head.next);
         Node rest_tail=head.next;
         rest_tail.next=head;
         head.next=null;
+        
         return rest_head;
     }
 
