@@ -18,7 +18,7 @@ public class StackSpan {
         Stack<Integer> s=new Stack<>();
         //int[] ngl=new int[n];
         int ans[]=new int[n];
-
+        //{100,80,60,70,60,75,85}
         for(int i=0;i<n;i++)
         {
             while(!s.isEmpty() && arr[i]>=arr[s.peek()])

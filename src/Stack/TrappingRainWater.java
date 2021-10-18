@@ -4,23 +4,22 @@ import java.io.*;
 import java.util.*;
 import java.lang.*;
 
-// } Driver Code Ends
-
 class TrappingRainWater{
 
-    public static void main (String[] args) throws IOException {
+    public static void main (String[] args)
+    {
             int n = 6;
             int arr[] = {3,0,0,2,0,4};
 
             //calling trappingWater() function
-            System.out.println(trappingWater(arr, n));
-        }
+           System.out.println(trappingWater(arr, n));
+    }
 
     // arr: input array
     // n: size of array
     // Function to find the trapped water between the blocks.
-    static int trappingWater(int arr[], int n) {
-
+    static int trappingWater(int arr[], int n)
+    {
         int[] mxl=new int[n];
         int[] mxr=new int[n];
         int[] vol=new int[n];
@@ -55,7 +54,6 @@ class TrappingRainWater{
         }
 
         return ans;
-
     }
 }
 
